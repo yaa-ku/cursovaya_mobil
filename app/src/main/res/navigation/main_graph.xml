@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.bluetoothconnection.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.example.bluetoothconnection.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/chartsFragment"
+        android:name="com.example.bluetoothconnection.ChartsFragment"
+        android:label="fragment_charts"
+        tools:layout="@layout/fragment_charts" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.bluetoothconnection.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.bluetoothconnection.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" /><action android:id="@+id/action_global_weatherFragment" app:destination="@id/weatherFragment"/><action android:id="@+id/action_global_chartsFragment" app:destination="@id/chartsFragment"/><action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment"/><action android:id="@+id/action_global_profileFragment" app:destination="@id/profileFragment"/>
+</navigation>
